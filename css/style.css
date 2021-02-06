@@ -1,0 +1,160 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #e5e5f7;
+  background-image: radial-gradient(#444cf7 1px, #e5e5f7 1px);
+  background-size: 20px 20px;
+}
+
+/* HEADER */
+
+header nav strong {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #444cf7;
+}
+
+/* HERO */
+
+.hero {
+  height: 420px;
+  overflow: hidden;
+}
+
+.hero-left {
+  vertical-align: middle;
+}
+
+.hero-left .type {
+  font-size: 2rem;
+}
+
+.hero-left .type strong {
+  color: #444cf7;
+}
+
+.hero .hero-right {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.hero .hero-right img {
+  width: 20rem;
+}
+
+/* SERVICES */
+
+.services {
+  margin-top: 2rem;
+  /* height: 420px;
+  overflow: hidden; */
+}
+
+.services .web-left {
+  vertical-align: middle;
+}
+
+.services .web-right {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.services h2 {
+  color: #444cf7;
+  margin-bottom: 2rem;
+}
+
+.services p {
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+.services .service-img {
+  margin-left: 3rem;
+  width: 20rem;
+}
+
+.services .design h3 {
+  margin-bottom: 2rem;
+}
+
+/* ABOUT */
+
+.about {
+  margin-top: 2rem;
+  overflow: hidden;
+}
+
+.about h2 {
+  color: #444cf7;
+  margin-bottom: 2rem;
+}
+
+.about p {
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+/* CONTACT */
+
+.contact h2 {
+  color: #444cf7;
+  margin-bottom: 1.2rem;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: #444cf7;
+  padding: 2rem 0 2rem;
+  overflow: hidden;
+  color: #e5e5f7;
+  text-align: center;
+}
+
+/* ICON WHATSAPP */
+
+.whatsapp {
+  display: none;
+  width: 2rem;
+  height: 2rem;
+  z-index: 1000;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  color: #444cf7;
+  font-size: 3rem;
+}
+
+/* TABLET */
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+}
+
+/* MOBILE */
+
+@media screen and (max-width: 767px) {
+  .nav {
+    display: none;
+  }
+
+  .hero {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .hero .hero-right img {
+    width: 15rem;
+  }
+
+  .services .service-img {
+    display: none;
+  }
+
+  .whatsapp {
+    display: block;
+  }
+}
